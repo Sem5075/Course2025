@@ -1,0 +1,51 @@
+СКС СС
+ 7xКомплект FH-SPB231TCDL20 / FH-SPB321TCDL20 10GE, 20км, SM, 1 волокно,TX/RX 1330/1270 LC, DDM 
+ 2xКомплект FH-ST2 10/100/1000BASE-T 
+
+ЕМТС
+ 1xКомплект ----------------------------------- GE, 20км, SM, 1 волокно,TX/RX 1310/1550 SC, DDM
+
+cc-1.1-6.2
+ 36xКомплектFH-SB3512CDS3  /  FH-SB5312CDS3     GE,  3км, SM, 1 волокно,TX/RX 1310/1550 SC, DDM
+
+СКУД
+
+СОТ
+ 35хSFP+    FH-SPB231TCDL20 		      10G,                           1270/1330, SM, LC
+ 35хSFP+    FH-SPB321TCDL20  		      10G,                           1330/1270, SM, LC
+ 2x SFP с интерфейсом RJ45
+
+РСС
+ 2xSFP	   FH-S3112CDL20 		  1,25 GE, 20км, SM, 2 волокна,		  1310, LC,DDM 
+ 16xSFP+   FH-SP311TCDL20                    10GE, 20км, SM, 2 волокна,           1310, LC,DDM
+ 6xQSFP+    FH-QSFP4TCDL-10		     40GE, 10км, SM, 2 волокна,           1310, LC,DDM
+
+VEGMAN
+ 72x 25GBASE-SR
+
+
+ИТОГО		
+
+6xQSFP+    FH-QSFP4TCDL-10		     40GE, 10км, SM, 2 волокна,           1310, LC,DDM
+72x25GBASE-SR Y00TSCOPX208U 		      25G
+42xКомплектFH-SPB231TCDL20 / FH-SPB321TCDL20 10GE, 20км, SM, 1 волокно,TX/RX 1330/1270 LC, DDM 
+16xSFP+	   FH-SP311TCDL20                    10GE, 20км, SM, 2 волокна,           1310,LC, DDM
+2xSFP	   FH-S3112CDL20 		  1,25 GE, 20км, SM, 2 волокна,		  1310,LC, DDM
+36xКомплектFH-SB3512CDS3  /  FH-SB5312CDS3     GE,  3км, SM, 1 волокно,TX/RX 1310/1550 SC, DDM
+2xКомплект FH-ST2 10/100/1000BASE-T 
+2x SFP RJ45       10/100/1000BASE-T
+
++надо
+20xКомплектFH-SPB231TCDL20 / FH-SPB321TCDL20 10GE, 20км, SM, 1 волокно,TX/RX 1330/1270 LC, DDM 
+
+штучно
+6xQSFP+    FH-QSFP4TCDL-10		     40GE, 10км, SM, 2 волокна,           1310,LC, DDM
+72x25GBASE-SR Y00TSCOPX208U 		      25G
+42xFH-SPB231TCDL20 			     10GE, 20км, SM, 1 волокно,TX/RX 1270/1330 LC, DDM 
+42xFH-SPB321TCDL20 		             10GE, 20км, SM, 1 волокно,TX/RX 1330/1270 LC, DDM 
+16xSFP+	   FH-SP311TCDL20                    10GE, 20км, SM, 2 волокна,           1310,LC, DDM
+2xSFP	   FH-S3112CDL20 		   1,25GE, 20км, SM, 2 волокна,		  1310,LC, DDM
+36x	   FH-SB3512CDS3		       GE,  3км, SM, 1 волокно,TX/RX 1310/1550 SC, DDM
+36x	   FH-SB5312CDS3		       GE,  3км, SM, 1 волокно,TX/RX 1310/1550 SC, DDM
+4x	   FH-ST2 10/100/1000BASE-T 
+2x SFP RJ45       10/100/1000BASE-T
