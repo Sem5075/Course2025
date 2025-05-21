@@ -1,0 +1,180 @@
+/* Основные стили для сайта больницы */
+.hospital-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.doctors-list, .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.doctor-card, .service-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover, .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.doctor-image, .service-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.doctor-image img, .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-info, .service-info {
+    padding: 20px;
+}
+
+.specializations {
+    color: #666;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.doctor-link, .service-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #0073aa;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.doctor-link:hover, .service-link:hover {
+    background-color: #005177;
+}
+
+.departments-filter ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.departments-filter ul li a {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.departments-filter ul li a:hover {
+    background-color: #0073aa;
+    color: white;
+}
+/* Стили для главной страницы */
+.hospital-hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hospital-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hospital-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #0073aa;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #005177;
+}
+
+.hospital-features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.feature-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hospital-doctors-preview {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.doctor-preview {
+    text-align: center;
+}
+
+.doctor-preview-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+.doctor-preview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.see-all-button {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #0073aa;
+    color: #0073aa;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.see-all-button:hover {
+    background-color: #0073aa;
+    color: white;
+}

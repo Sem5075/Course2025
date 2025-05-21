@@ -1,0 +1,80 @@
+- name: Установка WordPress с Nginx и MySQL
+  hosts: web
+  become: yes
+
+  vars:
+    wp_db_name: wordpress
+    wp_db_user: wp_user
+    wp_db_password: strongpassword
+    wp_db_root_password: rootpassword
+
+  tasks:
+
+    - name: Установка зависимостей
+      apt:
+        name:
+          - nginx
+          - mysql-server
+          - php-fpm
+          - php-mysql
+          - curl
+          - unzip
+          - wget
+          - python3-pip
+        update_cache: yes
+
+    - name: PyMySQL
+      pip:
+        name: 
+          - pymysql
+        executable: pip3     
+
+    - name: Создание БД
+      mysql_db:
+        name: "{{ wp_db_name }}"
+        state: present
+        login_user: root
+        login_password: 9550
+
+    - name: Создание пользователя WordPress
+      mysql_user:
+        name: "{{ wp_db_user }}"
+        password: "{{ wp_db_password }}"
+        priv: "{{ wp_db_name }}.*:ALL"
+        state: present
+        login_user: root
+        login_password: 9550
+
+    - name: Скачивание WordPress
+      get_url:
+        url: https://wordpress.org/latest.zip
+        dest: /tmp/wordpress.zip
+
+    - name: Распаковка WordPress
+      unarchive:
+        src: /tmp/wordpress.zip
+        dest: /var/www/
+        remote_src: yes
+
+    - name: Копирование настроек Nginx
+      copy:
+        src: files/nginx_wordpress.conf
+        dest: /etc/nginx/sites-available/wordpress
+        mode: '0644'
+
+    - name: Активация сайта
+      file:
+        src: /etc/nginx/sites-available/wordpress
+        dest: /etc/nginx/sites-enabled/wordpress
+        state: link
+
+    - name: Отключение default сайта
+      file:
+        path: /etc/nginx/sites-enabled/default
+        state: absent
+
+    - name: Перезапуск Nginx
+      service:
+        name: nginx
+        state: restarted
+
